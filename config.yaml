@@ -19,6 +19,12 @@ cells:
   docs:
     link:
       url: "https://github.com/andymchugh/andrewbmchugh-flow-panel/blob/main/src/README.md"
+  measure_point_40:     # cell name (can match element ID for clarity)
+    dataRef: "value"    # exactly matches your SQL query metric name
+    fillColor:          # or use 'labelColor' if you prefer colored text labels
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
   inbox_depth:
     dataRef: "motor_load_element"
     label:
