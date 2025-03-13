@@ -33,7 +33,7 @@ cells:
         - {color: "red", level: 1000}
     link: *grafana-home
   db_transactions:
-    dataRef: "test-data-large-cos"
+    dataRef: "lsd"
     label:
       separator: "cr"
       units: "ops"
@@ -46,7 +46,7 @@ cells:
         - {color: "red", level: 800}
     link: *grafana-home
   start_rate:
-    dataRef: "test-data-small-sin"
+    dataRef: "WIyWlLk6GJQsqaUBKTNV-12"
     label:
       separator: "colon"
       units: "pps"
@@ -58,7 +58,7 @@ cells:
         - {color: "orange", level: 100}
     link: *grafana-home
   active_workers:
-    dataRef: "test-data-small-cos"
+    dataRef: "pointer_load"
     label:
       separator: "cr"
       units: "none"
