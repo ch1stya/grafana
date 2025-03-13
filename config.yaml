@@ -1,6 +1,6 @@
 cells:
   measure_point_40:
-    dataRef: "value"
+    dataRef: "RH_avg"
     fillColor:
       gradientMode: "hue"
       thresholds:
