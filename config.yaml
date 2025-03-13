@@ -1,76 +1,9 @@
----
-
-#------------------------------------------------------------------------------
-# YAML Aliases to simplify maintenance
-
-anchorLinks:
-  - link: &grafana-home
-      url: "https://grafana.com/"
-      params: "time"
-
-#------------------------------------------------------------------------------
-# Panel Config
-
-cellIdPreamble: "cell-"
-cells: 
-  drawio:
-    link:
-      url: "https://app.diagrams.net/?p=svgdata"
-  docs:
-    link:
-      url: "https://github.com/andymchugh/andrewbmchugh-flow-panel/blob/main/src/README.md"
-  measure_point_40:     # cell name (can match element ID for clarity)
-    dataRef: "value"    # exactly matches your SQL query metric name
-    fillColor:          # or use 'labelColor' if you prefer colored text labels
-      gradientMode: "hue"
-      thresholds:
-        - {color: "green", level: 0}
-  inbox_depth:
-    dataRef: "motor_load_element"
-    label:
-      separator: "cr"
-      units: "none"
-      decimalPoints: 0
-    labelColor:
-      gradientMode: "hue"
-      thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
-    link: *grafana-home
-  db_transactions:
-    dataRef: "lsd"
-    label:
-      separator: "cr"
-      units: "ops"
-      decimalPoints: 0
+cells:
+  measure_point_40:
+    dataRef: "value"
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "semi-dark-green", level: 0}
-        - {color: "orange", level: 400}
-        - {color: "red", level: 800}
-    link: *grafana-home
-  start_rate:
-    dataRef: "WIyWlLk6GJQsqaUBKTNV-12"
-    label:
-      separator: "colon"
-      units: "pps"
-      decimalPoints: 0
-    labelColor:
-      gradientMode: "hue"
-      thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 100}
-    link: *grafana-home
-  active_workers:
-    dataRef: "pointer_load"
-    label:
-      separator: "cr"
-      units: "none"
-      decimalPoints: 0
-    labelColor:
-      gradientMode: "hue"
-      thresholds:
-        - {color: "#888888", level: 0}
-        - {color: "light-blue", level: 100}
+        - {color: "green", level: 0}      # value ≥ 0 green
+        - {color: "orange", level: 50}    # value ≥ 50 orange
+        - {color: "red", level: 100}      # value ≥ 100 red
