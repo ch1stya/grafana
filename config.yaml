@@ -1,3 +1,11 @@
 cells:
   avgs:
     dataRef: "avg"
+  elem1:
+    dataRef: "max"
+  elem2:
+    dataRef: "min"
+  elem3:
+    dataRef: "avg"
+  avgs:
+    dataRef: "avg"
