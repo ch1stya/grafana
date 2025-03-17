@@ -1,11 +1,9 @@
 cells:
   avgs:
-    dataRef: "avg"
+    dataRef: "RH_avg"
   elem1:
-    dataRef: "max"
+    dataRef: "RH_avg"
   elem2:
-    dataRef: "min"
+    dataRef: "RH_avg"
   elem3:
-    dataRef: "avg"
-  avgs:
-    dataRef: "avg"
+    dataRef: "RH_avg"
