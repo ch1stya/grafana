@@ -1,0 +1,26 @@
+---
+cells:
+  avgs:
+    dataRef: avg
+    fillColor:
+      thresholds:
+        - color: green
+          level: 0
+  elem1:
+    dataRef: max
+    fillColor:
+      thresholds:
+        - color: green
+          level: 0
+  elem2:
+    dataRef: min
+    fillColor:
+      thresholds:
+        - color: green
+          level: 0
+  elem3:
+    dataRef: avg
+    fillColor:
+      thresholds:
+        - color: green
+          level: 0
