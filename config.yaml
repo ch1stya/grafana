@@ -1,17 +1,8 @@
 cells:
-  measure_point_40:
-    dataRef: "RH_avg"
+  avgs:
+    dataRef: avg
     fillColor:
-      gradientMode: "hue"
+      gradientMode: hue
       thresholds:
-        - {color: "green", level: 0}      # value ≥ 0 green
-        - {color: "orange", level: 50}    # value ≥ 50 orange
-        - {color: "red", level: 100}      # value ≥ 100 red
-  lsd:
-    dataRef: "RH_min"
-    fillColor:
-      gradientMode: "hue"
-      thresholds:
-        - {color: "green", level: 0}      # value ≥ 0 green
-        - {color: "orange", level: 50}    # value ≥ 50 orange
-        - {color: "red", level: 100}      # value ≥ 100 red
+        - {color: "green". level: 0}
+        - {color: "orange", level: 50}
