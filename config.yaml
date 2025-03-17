@@ -1,9 +1,24 @@
 cells:
   avgs:
-    dataRef: "RH_avg"
+    dataRef: "avg"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+
   elem1:
-    dataRef: "RH_avg"
+    dataRef: "max"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+
   elem2:
-    dataRef: "RH_avg"
+    dataRef: "min"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+
   elem3:
-    dataRef: "RH_avg"
+    dataRef: "avg"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
