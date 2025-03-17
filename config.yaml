@@ -1,8 +1,3 @@
 cells:
   avgs:
     dataRef: avg
-    fillColor:
-      gradientMode: hue
-      thresholds:
-        - {color: "green". level: 0}
-        - {color: "orange", level: 50}
