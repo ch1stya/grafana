@@ -19,8 +19,8 @@ cells:
   docs:
     link:
       url: "https://github.com/andymchugh/andrewbmchugh-flow-panel/blob/main/src/README.md"
-  inbox_depth:
-    dataRef: "test-data-large-sin"
+  motor_load:
+    dataRef: "motorlastmin"
     label:
       separator: "cr"
       units: "none"
@@ -45,7 +45,7 @@ cells:
         - {color: "orange", level: 400}
         - {color: "red", level: 800}
     link: *grafana-home
-  start_rate:
+  motor_load2:
     dataRef: "motorlastmax"
     label:
       separator: "colon"
@@ -57,7 +57,7 @@ cells:
         - {color: "green", level: 0}
         - {color: "orange", level: 100}
     link: *grafana-home
-  active_workers:
+  motor_load3:
     dataRef: "motorlastavg"
     label:
       separator: "cr"
