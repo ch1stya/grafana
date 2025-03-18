@@ -1,4 +1,7 @@
 ---
+
+gradientMode: "hue"
+cellIdPreamble: "cell-"
 cells:
   inhouse_queue_depth:
     dataRef: avg
