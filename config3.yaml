@@ -4,25 +4,19 @@ gradientMode: "hue"
 cellIdPreamble: "cell-"
 cells:
   inhouse_queue_depth:
-    dataRef: avg
+    dataRef: elem
     fillColor:
       thresholds:
         - color: green
           level: 0
-  elem1:
-    dataRef: max
+  inhouse_queue_count:
+    dataRef: elem2
     fillColor:
       thresholds:
         - color: green
           level: 0
-  elem2:
-    dataRef: min
-    fillColor:
-      thresholds:
-        - color: green
-          level: 0
-  elem3:
-    dataRef: avg
+  rabbitmq_queue_depth:
+    dataRef: elem3
     fillColor:
       thresholds:
         - color: green
