@@ -1,6 +1,6 @@
 ---
 cells:
-  avgs:
+  inhouse_queue_depth:
     dataRef: avg
     fillColor:
       thresholds:
