@@ -38,4 +38,13 @@ cells:
     labelColor:
       thresholdsRef: "queuecount"
     linkRef: "grafana-home"
+  fuel_consumption2:
+    dataRef: "fuel consumption"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    labelColor:
+      thresholdsRef: "queuecount"
+    linkRef: "grafana-home"
  
