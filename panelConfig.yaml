@@ -1,0 +1,69 @@
+---
+#------------------------------------------------------------------------------
+# YAML Aliases to simplify maintenance
+
+anchorLinks:
+  - link: &grafana-home
+      url: "https://grafana.com/"
+      params: "time"
+
+#------------------------------------------------------------------------------
+# Panel Config
+
+cellIdPreamble: "cell-"
+cells:
+  drawio:
+    link:
+      url: "https://app.diagrams.net/?p=svgdata"
+  docs:
+    link:
+      url: "https://github.com/andymchugh/andrewbmchugh-flow-panel/blob/main/src/README.md"
+  elem:
+    dataRef: "elem"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    labelColor:
+      gradientMode: "hue"
+      thresholds:
+        - { color: "green", level: 0 }
+        - { color: "orange", level: 500 }
+        - { color: "red", level: 1000 }
+    link: *grafana-home
+  elem1:
+    dataRef: "elem1"
+    label:
+      separator: "cr"
+      units: "ops"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 400 }
+        - { color: "red", level: 800 }
+    link: *grafana-home
+  elem2:
+    dataRef: "elem2"
+    label:
+      separator: "colon"
+      units: "pps"
+      decimalPoints: 0
+    labelColor:
+      gradientMode: "hue"
+      thresholds:
+        - { color: "green", level: 0 }
+        - { color: "orange", level: 100 }
+    link: *grafana-home
+  elem3:
+    dataRef: "elem3"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    labelColor:
+      gradientMode: "hue"
+      thresholds:
+        - { color: "#888888", level: 0 }
+        - { color: "light-blue", level: 100 }
