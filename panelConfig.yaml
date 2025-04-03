@@ -2,8 +2,8 @@
 gradientMode: "hue"
 cellIdPreamble: "cell-"
 cells:
-  elem:
-    dataRef: "elem"
+  fuel_consumption:
+    dataRef: "Fuel consumption"
     label:
       separator: "cr"
       units: "none"
@@ -11,8 +11,8 @@ cells:
     labelColor:
       thresholdsRef: "queuedepth"
     linkRef: "grafana-home"
-  elem2:
-    dataRef: "elem2"
+  running_hours:
+    dataRef: "running hours"
     label:
       separator: "cr"
       units: "none"
@@ -20,8 +20,8 @@ cells:
     labelColor:
       thresholdsRef: "queuecount"
     linkRef: "grafana-home"
-  elem3:
-    dataRef: "elem3"
+  load:
+    dataRef: "load"
     label:
       separator: "cr"
       units: "none"
@@ -29,8 +29,8 @@ cells:
     labelColor:
       thresholdsRef: "queuedepth"
     linkRef: "grafana-home"
-  rabbitmq_queue_count:
-    dataRef: "test-data-small-cos"
+  speed:
+    dataRef: "speed"
     label:
       separator: "cr"
       units: "none"
@@ -38,66 +38,4 @@ cells:
     labelColor:
       thresholdsRef: "queuecount"
     linkRef: "grafana-home"
-  mem_queue_depth:
-    dataRef: "test-data-large-sin"
-    label:
-      separator: "cr"
-      units: "none"
-      decimalPoints: 0
-    labelColor:
-      thresholdsRef: "queuedepth"
-    linkRef: "grafana-home"
-  db_transactions:
-    dataRef: "test-data-large-sin"
-    label:
-      separator: "cr"
-      units: "ops"
-      decimalPoints: 0
-    labelColor:
-      thresholdsRef: "dbtrans"
-    linkRef: "grafana-home"
-  duplicate_lock_rate:
-    dataRef: "test-data-small-cos"
-    label:
-      separator: "cr"
-      units: "ops"
-      decimalPoints: 0
-    labelColor:
-      thresholdsRef: "dbtrans"
-    linkRef: "grafana-home"
-  inhouse_queue_latency:
-    dataRef: "test-data-small-sin"
-    label:
-      separator: "cr"
-      units: "s"
-      decimalPoints: 1
-    labelColor:
-      thresholdsRef: "queuelatency"
-    linkRef: "grafana-home"
-  wakeup_queue_latency:
-    dataRef: "test-data-small-sin"
-    label:
-      separator: "cr"
-      units: "s"
-      decimalPoints: 1
-    labelColor:
-      thresholdsRef: "queuelatency"
-    linkRef: "grafana-home"
-  rabbitmq_latency:
-    dataRef: "test-data-small-cos"
-    label:
-      separator: "cr"
-      units: "s"
-      decimalPoints: 1
-    labelColor:
-      thresholdsRef: "queuelatency"
-    linkRef: "grafana-home"
-  rabbitmq_slowness:
-    dataRef: "test-data-small-cos"
-    label:
-      separator: "space"
-      units: "s"
-      decimalPoints: 1
-    labelColor:
-      thresholdsRef: "queuelatency"
-    linkRef: "grafana-home"
+ 
