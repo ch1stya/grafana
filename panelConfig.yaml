@@ -3,7 +3,7 @@ gradientMode: "hue"
 cellIdPreamble: "cell-"
 cells:
   inhouse_queue_depth:
-    dataRef: "elem"
+    dataRef: "inhouse_queue_depth"
     label:
       separator: "cr"
       units: "none"
@@ -12,7 +12,7 @@ cells:
       thresholdsRef: "queuedepth"
     linkRef: "grafana-home"
   inhouse_queue_count:
-    dataRef: "elem2"
+    dataRef: "inhouse_queue_count"
     label:
       separator: "cr"
       units: "none"
@@ -21,7 +21,7 @@ cells:
       thresholdsRef: "queuecount"
     linkRef: "grafana-home"
   rabbitmq_queue_depth:
-    dataRef: "elem3"
+    dataRef: "rabbitmq_queue_depth"
     label:
       separator: "cr"
       units: "none"
