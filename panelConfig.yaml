@@ -3,7 +3,7 @@ gradientMode: "hue"
 cellIdPreamble: "cell-"
 cells:
   fuel_consumption:
-    dataRef: "Fuel consumption"
+    dataRef: "fuel consumption"
     label:
       separator: "cr"
       units: "none"
@@ -38,8 +38,8 @@ cells:
     labelColor:
       thresholdsRef: "queuecount"
     linkRef: "grafana-home"
-  fuel_consumption2:
-    dataRef: "fuel consumption"
+  distance:
+    dataRef: "distance"
     label:
       separator: "cr"
       units: "none"
